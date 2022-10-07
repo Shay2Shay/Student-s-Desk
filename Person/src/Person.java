@@ -1,5 +1,6 @@
 import java.time.LocalDate;
 import java.time.Period;
+import java.util.ArrayList;
 import java.util.Date;
 
 public class Person {
@@ -159,5 +160,94 @@ public class Person {
             return false;
         }
 
+    }
+}
+
+class Faculty extends Person{
+
+    private LocalDate Date_of_joining;
+    private float salary;
+    private String Specialization;
+    Faculty()
+    {
+        super();
+    }
+
+    Faculty(String name , String Designation , String ID , LocalDate DOB , int phone_number , String address , String Aadhar_Number , String User_Nme , String password , String email_id , String gender , LocalDate DOJ , String specilazation , float salary)
+    {
+        super(name , Designation , ID , DOB , phone_number , address , Aadhar_Number , User_Nme , password , email_id , gender);
+        this.Date_of_joining = DOJ;
+        this.salary = salary;
+        this.Specialization = specilazation;
+    }
+
+    public String getSpecialization() {
+        return Specialization;
+    }
+
+    public LocalDate getDate_of_joining() {
+        return Date_of_joining;
+    }
+
+    public float getSalary() {
+        return salary;
+    }
+
+    public void setSpecialization(String specialization) {
+        Specialization = specialization;
+    }
+
+    public void setSalary(float salary) {
+        this.salary = salary;
+    }
+
+    public void setDate_of_joining(LocalDate date_of_joining) {
+        Date_of_joining = date_of_joining;
+    }
+}
+
+class UG_student extends Person{
+    private int Year;
+    private String Branch;
+    private ArrayList<String> courses = new ArrayList<String>();
+    UG_student()
+    {
+        super();
+    }
+    UG_student(String name , String Designation , String ID , LocalDate DOB , int phone_number , String address , String Aadhar_Number , String User_Nme , String password , String email_id , String gender , int year , String Branch , String[] course)
+    {
+        super(name , Designation , ID , DOB , phone_number , address , Aadhar_Number , User_Nme , password , email_id , gender);
+        this.Year = year;
+        this.Branch = Branch;
+        for(int i  = 0 ; i < course.length ; i++)
+        {
+            courses.add(course[i]);
+        }
+
+
+    }
+
+    public int getYear() {
+        return Year;
+    }
+
+    public String getBranch() {
+        return Branch;
+    }
+
+    public ArrayList<String> getCourses() {
+        return courses;
+    }
+
+    public void setYear(int year) {
+        Year = year;
+    }
+
+    public void setBranch(String branch) {
+        Branch = branch;
+    }
+
+    public void setCourses(ArrayList<String> courses) {
+        this.courses = courses;
     }
 }
