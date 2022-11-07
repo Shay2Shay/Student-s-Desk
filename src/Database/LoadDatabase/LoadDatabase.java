@@ -1,4 +1,4 @@
-package LoadDatabase;
+package src.Database.LoadDatabase;
 
 public interface LoadDatabase {
     // public void loadCsv(String name);

@@ -1,1 +1,0 @@
-export CLASSPATH=/home/shay/Downloads/mysql-connector-j-8.0.31/mysql-connector-j-8.0.31.jar:.

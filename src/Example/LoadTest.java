@@ -1,14 +1,19 @@
-import java.io.File;
-import java.io.FileReader;
+package src.Example;
 
-import LoadDatabase.*;
-import SQLconnect.*;
+import java.io.*;
 
-class loadForTest implements LoadDatabase{
-    File f;
+import src.Database.LoadDatabase.*;
+import src.Database.SQLconnect.*;
+
+public class LoadTest implements LoadDatabase{
+    @Override
     public void loadCsv(String name, String path){
+        SQLconnect con = new SQLconnect("jdbc", "jdbc", "jdbc");
+        System.out.println("Connected...");
+
+        File f;
         try{
-            f = new File(path+name);
+            f = new File(path+name+".csv");
             FileReader fr = new FileReader(f);
             int val = 0;
             String values;
@@ -19,20 +24,15 @@ class loadForTest implements LoadDatabase{
                     val = fr.read();
                 }
                 if(values.length() != 0){
-                    System.out.println(values);
+                    con.insertIntoTable(name, values);
                 }
             }
+            fr.close();
         }catch(Exception e){
             System.out.println(e);
+            System.exit(-1);
         }
 
         return;
-    }
-}
-
-class testLoad{
-    public static void main(String[] args) {
-        loadForTest lt = new loadForTest();
-        lt.loadCsv("test.csv", "/home/shay/Desktop/");
     }
 }
