@@ -1,0 +1,5 @@
+Armaan singh,kuflp239895,1992-09-15,8934305032,Round market andhra pradesh,7395027593712,Armann@123,qwertAr,Armaan@gmail.com,Male,2022-05-06,39502,pr office
+Subham Kumar,kuaff458895,1991-04-13,8323845707,rose gali himanchal pradesh,7392935003712,Subham@123,oreio23,Subham@gmail.com,Male,2022-01-03,45067,Hr office
+anshii gupta,ksgdh859895,1995-10-15,9259645032,bhind pokhra banaras up,7390863493712,Anshii@123,dsfg24f,Anshii@gmail.com,Female,2022-03-07,50562,Cod Office
+Virat kohli,sadjw923895,1991-09-25,9234505032,Down road Delhi,7332987593712,Virat@123,vuii353,Virat@gmail.com,Male,2022-05-06,45602,Dean Office
+Ragini Singh,kufsr49895,1987-09-15,3498656032,dunk road rajhasthan,7395678693712,Ragini@123,snfj24r,Ragini@gmail.com,Female,2022-05-06,29012,tan office
